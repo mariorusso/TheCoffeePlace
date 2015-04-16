@@ -1,0 +1,100 @@
+ /*
+////////////////////////////////////////////////////////////
+//       Print CSS StyleSheet                             //
+//       HTML5/CSS3 Capstone Project                      //
+//       ISSD 27 - 21013-1401                             //
+//       Mario Russo                                      //
+//       mariorusso at gmail                              //
+//                  Nov-04-14                             //
+////////////////////////////////////////////////////////////
+
+*/    
+
+     
+body{
+  width: 100%;
+  font-family: Arial, helvetica, sans-serif;
+  font-size: 14px;
+  
+}
+
+/* Hide */
+nav,
+#breadcrumbs,
+#search,
+#top_banner,
+#right_column,
+.social_icons,
+.col_video_box,
+#nav_footer{
+  display: none;
+}
+
+
+#wrapper{
+  width: 100%;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 0.9em;
+  line-height: 1.1em;
+  font-weight: 300;
+  text-align: left;    
+}
+
+img{
+  border: 0;
+}
+
+h2{
+  font-family: Oxygen, Arial, helvetica, sans-serif;
+  color: #000;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 13px 0 13px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3{
+  font-family: Oxygen, Arial, helvetica, sans-serif;
+  color: #000;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 15px 0 5px 0;
+  text-transform: capitalize;
+}
+/* End of General Styles */
+
+/* Start of header styles */
+
+header{
+  height: 99px;
+  background-color: #fff;
+} 
+
+header #logo a img{
+  display: initial;
+} 
+/*End of Content Styles */
+
+/*Start of Footer Styles */
+footer{
+  height: 55px;
+  border-top: 1px solid #000;
+  margin-top: 27px;
+  clear: both;
+  position: relative;
+}
+
+footer div#copyright{
+  font-size: 0.9em;
+  color: #666;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+/*End of Footer Styles */

@@ -1,0 +1,460 @@
+/*
+////////////////////////////////////////////////////////////
+//       Mobile CSS StyleSheet                            //
+//       HTML5/CSS3 Capstone Project                      //
+//       ISSD 27 - 21013-1401                             //
+//       Mario Russo                                      //
+//       mariorusso at gmail                              //
+//                  Nov-04-14                             //
+////////////////////////////////////////////////////////////
+
+*/ 
+html{
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Hide Divs */
+header .social_icons, #top_banner, #nav_footer, #breadcrumbs, #right_column{
+  display: none; 
+}
+
+
+body{
+  font-family: Roboto, Arial, helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  background-color: #333;
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+#wrapper{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  -o-box-shadow: 0px 4px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 4px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 4px 5px rgba(0,0,0,0.6);        
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.6); 
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 0.9em;
+  line-height: 1.1em;
+  font-weight: 300;
+  text-align: left;    
+}
+
+img{
+  border: 0;
+}
+
+img.resize{
+  width: 300px;
+  height: auto;
+}
+
+h1{
+  font-family: Oxygen, Arial, helvetica, sans-serif;
+  color: #666;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 13px 0 13px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2{
+  font-family: Oxygen, Arial, helvetica, sans-serif;
+  color: #666;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 13px 0 13px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3{
+  font-family: Oxygen, Arial, helvetica, sans-serif;
+  color: #666;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 15px 0 5px 0;
+  text-transform: capitalize;
+}
+
+h4{
+  font-family: Oxygen, Arial, helvetica, sans-serif;
+  color: #666;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 15px 0 5px 0;
+  text-transform: capitalize;
+}
+/* End of General Styles */
+
+/* Start of header styles */
+header{
+  padding: 0 0 10px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 145px;
+} 
+
+header #logo a{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 20;
+  background-image: url(../images/logo_mobile.jpg);
+  width: 162px;
+  height: 98px;
+}
+     
+header #search{
+ position: absolute;
+  top: 110px;
+  left: 10px;
+}
+            
+#search_form input[type=text]{
+  border: 2px solid #eee;
+  width: 250px;
+  height:22px;
+  padding: 2px;
+  float: left;  
+}
+
+#search_form input[type=submit]{
+  border: 2px solid #eee;
+  border-left: none;
+  width: 39px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+  background-image: url(../images/search_btn.gif);
+}            
+/* End of Header Styles */
+
+/* Start of Navigation Styles */
+nav #menubutton ul{
+  display:none; 
+}
+
+nav #menubutton{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 40;  
+}
+
+nav #menubutton a#menulink{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background-color: #eee;
+  background-image: url(../images/menu_mobile.jpg);
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+nav #menubutton ul{
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  width: 140px;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #333;
+  box-shadow: 0px 5px 7px rgba(0,0,0,0.65);
+}
+
+nav #menubutton ul li{
+  list-style-type: none;
+}
+     
+nav #menubutton ul li a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #333;
+  border-bottom: none;
+  padding: 6px 0 6px 5px;
+  display: block;
+}
+
+nav #menubutton ul li a:hover{
+  background-color: #ccc;  
+}
+
+nav #menubutton:hover ul{
+  display: block;
+}
+/* End of Navigation Styles */
+
+/*Start of Content Styles */
+#content_wrapper{
+  margin: 156px 0 17px 0;
+  padding: 10px;
+}
+
+div div.column_top{
+  width: 98%;
+  height: 51px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #eee;
+  background-image: url(../images/col_bg.jpg);
+}
+
+/* Start of Left Column Styles */     
+#left_column{
+  margin-left: auto;
+  margin-right: auto;
+  width: 298px;
+}
+
+div.column_content div#col_1_photo{
+  width: 140px;
+  height: 151px;
+  margin-right: 3px;
+  float: left; 
+}
+
+#left_column p{
+  height: 149px;
+  padding: 1px;
+  margin: 0 2px 0 5px;
+  line-height: 1.3em;
+}
+
+div.column_content .col_video_box{
+  background-color: #eee;
+  width: 252px;
+  height: 250px;
+  margin-top: 25px;
+  padding: 1px 21px 13px 21px;
+  -o-box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.5); 
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  background-image: url(../images/video.gif);
+  background-repeat: no-repeat;
+  background-position: 6px  45px;
+  clear: both;
+}
+/* End of left column styles */
+
+/* Start of center column styles */
+#center_column{
+  margin-left: auto;
+  margin-right: auto;
+  width: 294px;
+  margin-bottom: 27px; 
+  clear: both;       
+}
+
+div#signature_1{
+  margin-bottom: 17px;
+}
+
+div#signature_2{
+  margin-bottom: 30px;
+}
+
+#center_column a{
+  color: #600;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* End of center column styles */
+
+
+div div.column_content{
+  margin-top: 10px;
+  padding: 2px;
+}
+
+#menu_special{
+  padding: 2px;
+  background-color: #500000;
+  width: 98%;
+  float: left;
+  margin-bottom: 27px;
+}
+/* Start of Tables Styles */
+
+table{
+  margin: 10px auto 10px auto;
+  width: 98%;
+  border-spacing: 3px;
+  background-color: #eee;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+  clear: both;
+}
+      
+caption{
+  font-family: Oxigen, Arial, sans-serif;
+  padding: 5px;
+  background-color: #ccc;
+  color: #333;
+  border-radius: 5px 5px 0px 0px;
+}
+
+th{
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
+}
+      
+td{
+  text-align: center;
+  color: #000;
+  border: 0px solid #f00;
+  padding: 7px;
+  background-color: #ddd;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.75);
+}
+/* End of Tables Styles */
+
+div.itens{
+  padding: 2px;
+  width: 300px;
+  float: left;
+}
+
+.menu_item{
+ width: 98%;
+}
+
+.itens{
+  padding: 3px;
+  margin: 5px auto;
+  width: 98%;
+  background-color: #fff;
+}
+
+.itens_icon{
+  margin-right: 3px;
+  float: left;
+}
+
+#contactform{
+   width: 100%; 
+}
+
+#contactform #personal_info label{
+ display: block;
+ float: left;
+ width: 160px         
+}
+
+#contactform input[type=text],
+#contactform input[type=date],
+#contactform input[type=email],
+#contactform input[type=tel]{
+ margin-bottom: 4px;
+ width: 200px;
+ border: 2px solid #ccc;
+ font-size: 16px;
+ color: #000;
+ background-color: #fff;
+}
+    
+#contactform fieldset{
+ background-color: #eee;
+ border: 1px solid #000;
+ margin-bottom: 25px;
+}
+
+#contactform legend{
+ background-color: #eee;
+ color: #666;
+ padding: 6px;
+ font-weight: bold;
+ border: 1px solid #000;
+}
+/*End of Content Styles */
+
+/*Start of Footer Styles */
+footer{
+  height: 55px;
+  border-top: 1px solid #ccc;
+  margin-top: 27px;
+  clear: both;
+  position: relative;
+}
+
+footer div#footer_cup{
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/foot_cup.png);        
+  position: absolute;
+  top: -25px;
+  left: 48.5%; 
+}
+
+footer .social_icons{
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  z-index: 998;
+}
+
+footer .social_icons div{
+  display: inline-block;
+}
+
+footer .social_icons a{
+  display: inline-block;
+}
+
+footer .social_icons .fb a{
+  background-image: url(../images/fb_icon.jpg);
+  width: 32px;
+  height: 32px;
+  margin-right: 21px;
+}
+
+footer .social_icons .tw a{
+  background-image: url(../images/tw_icon.jpg);
+  width: 32px;
+  height: 32px;
+  margin-right: 21px;
+}
+     
+footer .social_icons .ist a{
+  background-image: url(../images/ist_icon.jpg);
+  width: 32px;
+  height: 32px;
+  margin-right: 0;
+}
+      
+footer div#copyright{
+  width: 150px;
+  font-size: 0.9em;
+  color: #666;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+footer div#copyright p{
+  text-align: right;
+}
+/*End of Footer Styles */

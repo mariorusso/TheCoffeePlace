@@ -1,0 +1,250 @@
+<!doctype html>
+
+<!--
+//////////////////////////////////////////////////////////////////////
+//                                                                  //
+//  Description: HTML5/CSS3 Capstone Project ISSD 27                //
+//               21013-1401                                         //
+//  Last edited: Nov 04 2014                                        //
+//  Author:      Mario Russo                                        //
+//  Contact:     mariorusso at gmail dot com                        //
+//                                                                  //
+//////////////////////////////////////////////////////////////////////
+--> 
+
+<html lang="en">
+  <head> 
+    <title>Locator | The Coffee Place</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The Coffee Place. We offer Fresh Coffee everytime, hot beverages and many quick meal options." />
+    <meta name="keywords" content="coffee, brazilian coffee, quick meal" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700%7cOxygen:300,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- desktop css -->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 601px)" href="styles/tcp_desktop.css" />
+    
+    <!-- mobile css -->
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 601px)" href="styles/tcp_mobile.css" /> 
+    
+    <!-- Print css -->
+    <link rel="stylesheet" type="text/css" media="print" href="styles/tcp_print.css" />  
+    
+    
+    <style type="text/css">     
+      #locator_form input[type=text]{
+        border: 2px solid #eee;
+        width: 350px;
+        height: 22px;
+        padding: 2px;
+        float: left;
+        margin-bottom: 3px;  
+      }
+      
+      #locator_form input[type=submit]{
+        border: 2px solid #eee;
+        border-left: none;
+        width: 39px;
+        height: 30px;
+        margin: 0;
+        cursor: pointer;
+        background-image: url(images/search_btn.jpg);
+        margin-bottom: 3px;
+      }
+      @media screen and (max-width: 600px){
+        #locator_form input[type=text]{
+          width: 250px; 
+      }
+    </style>
+    
+     
+    <!--[if IE]>
+    
+       <link rel="stylesheet" type="text/css" href="styles/tcp_desktop.css" />
+  
+    </style>
+    <![endif]-->
+  
+    <!--[if LT IE 9]>
+      <script type="text/javascript">
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('footer');
+        document.createElement('article');
+      </script>     
+      <style type="text/css">
+        header, nav, footer, article{
+         display:block;
+        }
+      </style>
+    <![endif]-->
+    
+    
+  </head>
+  <!-- End of head -->
+
+  <!-- Start of body -->
+  <body>
+    <!-- Start of page wrapper -->
+    <div id="wrapper">
+    
+      <!-- Start of header -->
+      <header>
+        <div id="logo">
+          <a href="index.html" title="The Coffee Place Home Page"><img src="images/logo_mobile.jpg" alt="logo the coffee place" width="162" height="98"/> </a>
+        </div>
+        
+        <!-- Start of Header Social Icons -->
+        <div class="social_icons">
+        
+          <div class="fb"><a href="#"> </a></div>
+          
+          <div class="tw"><a href="#"> </a></div>
+          
+          <div class="ist"><a href="#"> </a></div>
+        
+        </div>
+        <!-- End of Header Social Icons -->
+      
+        <!-- Start of search box -->
+        <div id="search">
+          <form 
+            action="#"
+            method="post"
+            name="search_form"
+            id="search_form"
+           >
+           
+             <input type="text" name="search_field" id="search_field" placeholder="Search on this site..." required />
+             <input type="submit" value=""/>
+             
+          </form>
+        </div>
+        <!-- end of search box -->
+        
+      </header><!-- End of header -->
+      
+      <!-- Start of navigation bar -->
+      <nav>
+      
+        <div id="menubutton"><a href="#" id="menulink"> </a>
+        
+          <ul>
+            <li><a href="coffee.html" title="Read more about our coffee history">COFFEE</a></li>
+            <li><a href="menu.html" title="View our full menu and specials">MENU</a></li>
+            <li><a href="locator.html" title="Locate the nearest The Coffee Place">FIND YOUR PLACE</a></li>
+            <li><a href="rewards.html" title="Learn more about our rewards program">REWARDS</a></li>
+            <li><a href="franchising.html" title="Learn more about our franchising system">FRANCHISING</a></li>          
+          </ul>
+          
+        </div>
+      </nav><!-- End of the navigation bar -->
+      
+      <!-- Top banner -->
+      <div id="top_banner">
+      </div>
+        
+      <div id="breadcrumbs">
+        <p> FIND YOUR PLACE </p>
+      </div>
+      <!-- Start of Content --> 
+      <div id="content_wrapper"> 
+       
+        
+        <div>
+          
+          <div class="column_top">
+            <h1>find your place</h1>
+          </div>
+          
+          <h3>Find The Coffee Place near you.</h3>
+          
+          <form 
+            action="#"
+            method="post"
+            name="locator_form"
+            id="locator_form"
+           >
+           
+             <input type="text" name="locator_field" id="locator_field" placeholder="Postal, City, Province, etc..." required />
+             <input type="submit" value=""/>
+             
+          </form>
+          
+          <div class="restaurants">
+            <img class="resize" src="images/map.jpg" alt="map image" width="445" height="382" />
+          </div>
+          
+          <div class="restaurants">
+             
+            <div class="itens_icon">
+              <img src="images/coffee_cup.jpg" alt="coffee cup icon" width="100" height="150" />
+            </div>
+            
+            <h4>Coffee</h4>
+            
+            <p> 
+              Take a look at our variety so you can choose the perfect for you.
+              <br /><a href="#">Learn more</a>. 
+            
+            </p>
+          
+          </div>
+          
+          <div class="restaurants">
+          
+          </div>
+          
+          <div class="restaurants">
+          
+          </div>
+          
+        </div>
+        
+      </div>  
+      <!-- End of Content -->
+      
+      <!-- Start of footer -->
+      <footer>
+        
+        <div id="footer_cup"></div>
+        
+        <!-- Start of footer Social Icons -->
+        <div class="social_icons">
+        
+          <div class="fb"><a href="#"> </a></div>
+          
+          <div class="tw"><a href="#"> </a></div>
+          
+          <div class="ist"><a href="#"> </a></div>
+        
+        </div>
+        <!-- End of footer Social Icons -->
+        
+        <div id="nav_footer">
+          
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        
+        </div>
+        
+        <div id="copyright">
+          <p>&copy;2014 The Coffee Place. All rights reserved.</p> 
+        </div>        
+        
+        
+      </footer>
+      <!-- End of footer -->
+    
+    </div>
+    <!-- End of wrapper -->
+  
+  </body><!-- End of body -->   
+</html>

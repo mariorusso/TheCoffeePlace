@@ -1,0 +1,29 @@
+ /*
+////////////////////////////////////////////////////////////
+//       IE8 CSS StyleSheet                           //
+//       HTML5/CSS3 Capstone Project                      //
+//       ISSD 27 - 21013-1401                             //
+//       Mario Russo                                      //
+//       mariorusso at gmail                              //
+//                  Oct-30-14                             //
+////////////////////////////////////////////////////////////
+
+*/  
+ header, nav, footer, article{
+   display:block;
+}
+
+nav{
+  background-color: #eee;
+  background-image: url(../images/col_bg.jpg);
+} 
+
+div div.column_top{
+  width: 298px;
+  height: 51px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #eee;
+  background-image: url(../images/col_bg.jpg);
+}
+    
